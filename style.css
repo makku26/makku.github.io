@@ -1,0 +1,166 @@
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 49%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+
+.advisory {
+    padding: 6px 120px;
+
+    color: white;
+    font-size: 80%;
+    background: transparent;
+    box-shadow: 1px 1px 0px rgba(255, 255, 255, 0.259);
+    height: 4.5%;
+}
+
+.info-icon img {
+    height:20px;
+    width: 20px;
+}
+
+.navbar {
+    padding: 0 100px;
+    transition: background-color 0.3s, margin-top 0.3s;
+}
+
+.navbar-nav .nav-link {
+    color: white; /* Default color for transparent background */
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link.dark {
+    color: rgba(0, 0, 0, 0.84) !important; /* Change this to your desired dark color */
+}
+
+.bg-transparent {
+    background-color: transparent !important;
+}
+
+.bg-solid {
+    background-color: rgb(255, 255, 255) !important; /* Change this to your desired solid color */
+}
+
+
+.nav-link, .btn {
+    font-weight: 500;
+    font-size: 120%;
+}
+
+.carousel-indicators {
+    top: 55%;
+  }
+
+.carousel-indicators button {
+    border-radius: 10px;
+}
+
+.carousel-item {
+    height: 100vh;
+}
+
+.carousel-image {
+    height: 100%;
+    object-fit: cover;
+}
+
+.centered {
+    color: white;
+    font-weight: bolder;
+    font-size: 600%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 10px rgba(9, 9, 9, 0.41);
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.book-box {
+    color: white;
+    margin: auto 0;
+    border-radius: 10px;
+    padding: 5%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 80%;
+    height: 45%;
+    top: 60%;
+    left: 10%;
+    box-shadow: 1px 1px 10px #0000004d;
+    z-index: 10;
+}
+
+.destinationFrom, .depart {
+    margin: 0;
+    padding: 10px;
+    height: 50px;
+    border-radius: 8px;
+    border-width: 1px;
+    margin-bottom: 10px;
+}
+
+.destinationTo, .return {
+    margin: 0;
+    padding: 10px;
+    height: 50px;
+    border-radius: 8px;
+    border-width: 1px;
+    margin-bottom: 10px;
+}
+
+.container-form {
+    background-color: transparent;
+    width: 100%;
+    align-items: center;
+    
+}
+
+.main-body {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    margin: 0;
+    z-index: 11;
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .book-box{ 
+        height: 45%;
+    }
+    .destinationFrom, .depart {
+        margin: 0;
+        padding: 10px;
+        height: 50px;
+        border-radius: 0;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        border-width: 1px;
+        margin-bottom: 10px;
+    }
+    
+    .destinationTo, .return {
+        margin: 0;
+        padding: 10px;
+        height: 50px;
+        border-radius: 0;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-width: 1px;
+        margin-left: -5px;
+    }
+  }
