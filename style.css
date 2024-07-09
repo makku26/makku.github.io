@@ -12,8 +12,6 @@
   --maxwidth: 1200px
 }
 
-scale
-
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -492,3 +490,33 @@ img {
 
 }
 
+
+
+
+
+/* Loader */
+
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999; 
+}
+
+.loader img {
+  width: 100px;
+  height: auto;
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.75s, visibility 0.75s;
+}

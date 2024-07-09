@@ -1,223 +1,226 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cebu Pacific | Home</title>
-  <!--Cascading Style Sheet and Remixicon-->
-  <link rel="stylesheet" href="./style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
-  <!--Google Font-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <!--JavaScript and dependencies-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-<body>
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cebu Pacific | Home</title>
+    <!--Cascading Style Sheet and Remixicon-->
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--JavaScript and dependencies-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+
+
+    <!--Loader Animation-->
+    <div class="loader">
+      <img src="assets/loader.gif" alt="">
+    </div>
+  
+
+    <!--MainNav START-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid justify-content-center">
+        <a class="navbar-brand d-flex ml-auto" href="./index.html">
+          <img src="./assets/icon-CebuPacific.avif" alt="cebu pacific">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#book" style="color: #006dc5;">Book</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./services.html" style="color: #006dc5;">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #006dc5;">OurStory</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #006dc5;">
+                Explore
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Manila (MNL)</a></li>
+                <li><a class="dropdown-item" href="#">Tokyo (TKY)</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <form class="d-flex" role="login">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <li class="nav-item">
+              <a class="nav-link" href="./login.html" style="color: #006dc5;"><i class="ri-user-fill"></i>Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--MainNav END-->
 
 
 
+    
 
-
-  <!--MainNav START-->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-    <div class="container-fluid justify-content-center">
-      <a class="navbar-brand d-flex ml-auto" href="./index.html">
-        <img src="./assets/icon-CebuPacific.avif" alt="cebu pacific">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#book" style="color: #006dc5;">Book</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./services.html" style="color: #006dc5;">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" style="color: #006dc5;">OurStory</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #006dc5;">
-              Explore
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Manila (MNL)</a></li>
-              <li><a class="dropdown-item" href="#">Tokyo (TKY)</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <form class="d-flex" role="login">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          </form>
-          <li class="nav-item">
-            <a class="nav-link" href="./login.html" style="color: #006dc5;"><i class="ri-user-fill"></i>Login</a>
+    <!--Advisory START-->
+      <div class="advisory fixed-top">
+        <ul>
+          <li class="advisory-item"><i class="ri-information-fill"></i>
+            <b>Travel Advisory:</b> Cebu Pacific delayed flights... </li>
+          <li class="advisory-item">
+            <i class="ri-global-line"></i>
+            <select name="cars" id="language">
+              <option value="Language">Language</option>
+              <option value="English">English (EN)</option>
+              <option value="Spanish">Spanish (SP)</option>
+            </select>
           </li>
         </ul>
       </div>
-    </div>
-  </nav>
-  <!--MainNav END-->
-
-
-
-  
-
-  <!--Advisory START-->
-    <div class="advisory fixed-top">
-      <ul>
-        <li class="advisory-item"><i class="ri-information-fill"></i>
-          <b>Travel Advisory:</b> Cebu Pacific delayed flights... </li>
-        <li class="advisory-item">
-          <i class="ri-global-line"></i>
-          <select name="cars" id="language">
-            <option value="Language">Language</option>
-            <option value="English">English (EN)</option>
-            <option value="Spanish">Spanish (SP)</option>
-          </select>
-        </li>
-      </ul>
-    </div>
-  <!--Advisory END-->
+    <!--Advisory END-->
 
 
 
 
 
 
-  <!--HEADER-->
-  <br><br><br>
-  <header class="sectionContainer headerContainer">
-    <h1 class="sectionHeader">"Let's fly every <j>Juan</j>."</h1>
-    <img src="assets/FrontPage-Airbus.png" alt="header"/>
-    <button class="toBook" href="#book">
-      <a class="nav-link active" aria-current="page" href="#book"><i class="ri-arrow-down-line"></i></a>
-    </button>
-  </header>
+    <!--HEADER-->
+    <br><br><br>
+    <header class="sectionContainer headerContainer">
+      <h1 class="sectionHeader">"Let's fly every <j>Juan</j>."</h1>
+      <img src="assets/FrontPage-Airbus.png" alt="header"/>
+      <button class="toBook" href="#book">
+        <a class="nav-link active" aria-current="page" href="#book"><i class="ri-arrow-down-line"></i></a>
+      </button>
+    </header>
 
-  
-  
-  <div class="booking" id="book"></div>
-  <br><br>  
-  
-  <section class="sectionContainer planContainer">
-    <h2 class="sectionHeader">Start your flight journey with <y>Cebu Pacific Airlines</y>.</h2>
-    <p class="subheader" >FLIGHT BOOKING <i class="ri-plane-line"></i></p>
-  </section>
-
-
+    
+    
+    <div class="booking" id="book"></div>
+    <br><br>  
+    
+    <section class="sectionContainer planContainer">
+      <h2 class="sectionHeader">Start your flight journey with <y>Cebu Pacific Airlines</y>.</h2>
+      <p class="subheader" >FLIGHT BOOKING <i class="ri-plane-line"></i></p>
+    </section>
 
 
 
-  <!--BookingForm START-->
-  <section class="sectionContainer bookingContainer" id="bookingSection">
-    <div class="bookingNav">
-      <span>One-way</span>
-      <span>Round Trip</span>
-      <span>Multi-city</span>
-    </div>
-    <form>
-      <div class="formGroup">
-        <span><i class="ri-map-pin-line"></i></span>
-        <div class="inputContent">
-          <div class="inputGroup">
-            <input type="text" placeholder=" " />
-            <label>Location</label>
+
+
+    <!--BookingForm START-->
+    <section class="sectionContainer bookingContainer" id="bookingSection">
+      <div class="bookingNav">
+        <span>One-way</span>
+        <span>Round Trip</span>
+        <span>Multi-city</span>
+      </div>
+      <form>
+        <div class="formGroup">
+          <span><i class="ri-map-pin-line"></i></span>
+          <div class="inputContent">
+            <div class="inputGroup">
+              <input type="text" placeholder=" " />
+              <label>Location</label>
+            </div>
+            <p>Where are you going?</p>
           </div>
-          <p>Where are you going?</p>
+        </div>
+        <div class="formGroup">
+          <span><i class="ri-user-3-line"></i></span>
+          <div class="inputContent">
+            <div class="inputGroup">
+              <input type="number" placeholder=" " />
+              <label>Travelers</label>
+            </div>
+            <p>Add guests</p>
+          </div>
+        </div>
+        <div class="formGroup">
+          <span><i class="ri-calendar-line"></i></span>
+          <div class="inputContent">
+            <div class="inputGroup">
+              <input type="date" placeholder=" " />
+              <label>Departure</label>
+            </div>
+            <p>Add date</p>
+          </div>
+        </div>
+        <div class="formGroup">
+          <span><i class="ri-calendar-line"></i></span>
+          <div class="inputContent">
+            <div class="inputGroup">
+              <input type="date" placeholder=" " />
+              <label>Return</label>
+            </div>
+            <p>Add date</p>
+          </div>
+        </div>
+        <button class="btn"><i class="ri-search-line"></i></button>
+      </form>
+    </section>
+    <!--BookingForm END-->
+
+
+
+
+
+
+    <br><br><br><br><br><br>
+    <!--Footer START-->
+    <footer class="footer">
+      <div class="sectionContainer footerContainer">
+        <div class="footerCol">
+          <h3>cebu pacific air</h3>
+          <p>
+            Where Every Juan Flies. With a strong commitment to customer
+            satisfaction and a passion for air travel, Cebu Pacific offers
+            exceptional service and seamless journeys.
+          </p>
+          <p>
+            From friendly smiles to state-of-the-art aircraft, we connect the
+            world, ensuring safe, comfortable, and unforgettable experiences.
+          </p>
+        </div>
+        <div class="footerCol">
+          <h3>INFORMATION</h4>
+          <p>Home</p>
+          <p>About</p>
+          <p>Offers</p>
+          <p>Seats</p>
+          <p>Destinations</p>
+        </div>
+        <div class="footerCol">
+          <h3>CONTACT</h4>
+          <p>Support</p>
+          <p>Media</p>
+          <p>Socials</p>
         </div>
       </div>
-      <div class="formGroup">
-        <span><i class="ri-user-3-line"></i></span>
-        <div class="inputContent">
-          <div class="inputGroup">
-            <input type="number" placeholder=" " />
-            <label>Travelers</label>
-          </div>
-          <p>Add guests</p>
+      <div class="sectionContainer footerbar">
+        <p>designed by Julius Francis De Leon. for educational purposes only.</p>
+        <div class="socials">
+          <span><i class="ri-facebook-fill"></i></span>
+          <span><i class="ri-twitter-fill"></i></span>
+          <span><i class="ri-instagram-line"></i></span>
+          <span><i class="ri-youtube-fill"></i></span>
         </div>
       </div>
-      <div class="formGroup">
-        <span><i class="ri-calendar-line"></i></span>
-        <div class="inputContent">
-          <div class="inputGroup">
-            <input type="date" placeholder=" " />
-            <label>Departure</label>
-          </div>
-          <p>Add date</p>
-        </div>
-      </div>
-      <div class="formGroup">
-        <span><i class="ri-calendar-line"></i></span>
-        <div class="inputContent">
-          <div class="inputGroup">
-            <input type="date" placeholder=" " />
-            <label>Return</label>
-          </div>
-          <p>Add date</p>
-        </div>
-      </div>
-      <button class="btn"><i class="ri-search-line"></i></button>
-    </form>
-  </section>
-  <!--BookingForm END-->
+    </footer>
+    <!--Footer END-->
 
 
 
-
-
-
-  <br><br><br><br><br><br>
-  <!--Footer START-->
-  <footer class="footer">
-    <div class="sectionContainer footerContainer">
-      <div class="footerCol">
-        <h3>cebu pacific air</h3>
-        <p>
-          Where Every Juan Flies. With a strong commitment to customer
-          satisfaction and a passion for air travel, Cebu Pacific offers
-          exceptional service and seamless journeys.
-        </p>
-        <p>
-          From friendly smiles to state-of-the-art aircraft, we connect the
-          world, ensuring safe, comfortable, and unforgettable experiences.
-        </p>
-      </div>
-      <div class="footerCol">
-        <h3>INFORMATION</h4>
-        <p>Home</p>
-        <p>About</p>
-        <p>Offers</p>
-        <p>Seats</p>
-        <p>Destinations</p>
-      </div>
-      <div class="footerCol">
-        <h3>CONTACT</h4>
-        <p>Support</p>
-        <p>Media</p>
-        <p>Socials</p>
-      </div>
-    </div>
-    <div class="sectionContainer footerbar">
-      <p>designed by Julius Francis De Leon. for educational purposes only.</p>
-      <div class="socials">
-        <span><i class="ri-facebook-fill"></i></span>
-        <span><i class="ri-twitter-fill"></i></span>
-        <span><i class="ri-instagram-line"></i></span>
-        <span><i class="ri-youtube-fill"></i></span>
-      </div>
-    </div>
-  </footer>
-  <!--Footer END-->
-
-
-
-
-</body>
-</html>
+  </body>
+  </html>
