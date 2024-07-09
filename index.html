@@ -17,6 +17,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+
+
+
+
+
   <!--MainNav START-->
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
     <div class="container-fluid justify-content-center">
@@ -27,10 +32,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#bookingSection">Book</a>
+            <a class="nav-link active" aria-current="page" href="#book">Book</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">OurStory</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -43,9 +51,6 @@
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">OurStory</a>
-          </li>
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -57,6 +62,8 @@
   <!--MainNav END-->
 
 
+
+  
 
   <!--Advisory START-->
     <div class="advisory fixed-top">
@@ -75,25 +82,40 @@
     </div>
   <!--Advisory END-->
 
+
+
+
+
+
+  <!--HEADER-->
   <br><br><br>
   <header class="sectionContainer headerContainer">
     <h1 class="sectionHeader">"Let's fly every <j>Juan</j>."</h1>
-    <img src="assets/FrontPage-Airbus.png" alt="header" />
+    <img src="assets/FrontPage-Airbus.png" alt="header"/>
+    <button class="b"><i class="ri-arrow-down-line"></button>
   </header>
-
+  
+  <div class="arrowDown" id="book"></div>
+  <br><br><br>
+  
   <section class="sectionContainer planContainer">
-    <p class="subheader">FLIGHT BOOKING</p>
+    <p class="subheader" >FLIGHT BOOKING</p>
     <h2 class="sectionHeader">We fly for every Juan</h2>
     <p class="description">
       Start your flight journey with Cebu Pacific Airlines.
     </p>
+  </section>
+
+
+
+
 
   <!--BookingForm START-->
   <section class="sectionContainer bookingContainer" id="bookingSection">
     <div class="bookingNav">
-      <span>Economy Class</span>
-      <span>Business Class</span>
-      <span>First Class</span>
+      <span>One-way</span>
+      <span>Round Trip</span>
+      <span>Multi-city</span>
     </div>
     <form>
       <div class="formGroup">
@@ -139,5 +161,59 @@
       <button class="btn"><i class="ri-search-line"></i></button>
     </form>
   </section>
+  <!--BookingForm END-->
+
+
+
+
+
+
+  <br><br><br><br><br><br>
+  <!--Footer START-->
+  <footer class="footer">
+    <div class="sectionContainer footerContainer">
+      <div class="footerCol">
+        <h3>cebu pacific air</h3>
+        <p>
+          Where Excellence Takes Flight. With a strong commitment to customer
+          satisfaction and a passion for air travel, Flivan Airlines offers
+          exceptional service and seamless journeys.
+        </p>
+        <p>
+          From friendly smiles to state-of-the-art aircraft, we connect the
+          world, ensuring safe, comfortable, and unforgettable experiences.
+        </p>
+      </div>
+      <div class="footerCol">
+        <h3>INFORMATION</h4>
+        <p>Home</p>
+        <p>About</p>
+        <p>Offers</p>
+        <p>Seats</p>
+        <p>Destinations</p>
+      </div>
+      <div class="footerCol">
+        <h3>CONTACT</h4>
+        <p>Support</p>
+        <p>Media</p>
+        <p>Socials</p>
+      </div>
+    </div>
+    <div class="sectionContainer footerbar">
+      <p>Created by Julius Francis De Leon. for educational purposes only.</p>
+      <div class="socials">
+        <span><i class="ri-facebook-fill"></i></span>
+        <span><i class="ri-twitter-fill"></i></span>
+        <span><i class="ri-instagram-line"></i></span>
+        <span><i class="ri-youtube-fill"></i></span>
+      </div>
+    </div>
+  </footer>
+  <!--Footer END-->
+
+
+
+
+  
 </body>
 </html>
