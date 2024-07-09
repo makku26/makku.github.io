@@ -453,6 +453,11 @@ img {
       text-align: center;
     }
 
+    header img {
+      position: relative;
+      left: -35vh;
+    }
+
     .headerContainer .sectionHeader {
       font: poppins;
       text-align: center;
@@ -461,6 +466,6 @@ img {
       background-image: linear-gradient(#4e7ead,#4e7ead);
       color: transparent;
       background-clip: text;
-    } 
+    }
   }
 
