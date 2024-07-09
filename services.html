@@ -17,15 +17,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-
-
-
-
-
   <!--MainNav START-->
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
     <div class="container-fluid justify-content-center">
-      <a class="navbar-brand d-flex ml-auto" href="./index.html">
+      <a class="navbar-brand d-flex ml-auto" href="#">
         <img src="./assets/icon-CebuPacific.avif" alt="cebu pacific">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +32,7 @@
             <a class="nav-link active" aria-current="page" href="#book" style="color: #006dc5;">Book</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./services.html" style="color: #006dc5;">Services</a>
+            <a class="nav-link" href="#" style="color: #006dc5;">Services</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#" style="color: #006dc5;">OurStory</a>
@@ -53,21 +48,16 @@
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </li>
-          <form class="d-flex" role="login">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          </form>
-          <li class="nav-item">
-            <a class="nav-link" href="./login.html" style="color: #006dc5;"><i class="ri-user-fill"></i>Login</a>
-          </li>
         </ul>
+        <!-- Search Form and Login Button -->
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-warning" type="submit"><i class="ri-user-fill"></i>Login</button>
+        </form>
       </div>
     </div>
   </nav>
   <!--MainNav END-->
-
-
-
-  
 
   <!--Advisory START-->
     <div class="advisory fixed-top">
@@ -90,83 +80,6 @@
 
 
 
-
-  <!--HEADER-->
-  <br><br><br>
-  <header class="sectionContainer headerContainer">
-    <h1 class="sectionHeader">"Let's fly every <j>Juan</j>."</h1>
-    <img src="assets/FrontPage-Airbus.png" alt="header"/>
-    <button class="toBook" href="#book">
-      <a class="nav-link active" aria-current="page" href="#book"><i class="ri-arrow-down-line"></i></a>
-    </button>
-  </header>
-
-  
-  
-  <div class="booking" id="book"></div>
-  <br><br>  
-  
-  <section class="sectionContainer planContainer">
-    <h2 class="sectionHeader">Start your flight journey with <y>Cebu Pacific Airlines</y>.</h2>
-    <p class="subheader" >FLIGHT BOOKING <i class="ri-plane-line"></i></p>
-  </section>
-
-
-
-
-
-  <!--BookingForm START-->
-  <section class="sectionContainer bookingContainer" id="bookingSection">
-    <div class="bookingNav">
-      <span>One-way</span>
-      <span>Round Trip</span>
-      <span>Multi-city</span>
-    </div>
-    <form>
-      <div class="formGroup">
-        <span><i class="ri-map-pin-line"></i></span>
-        <div class="inputContent">
-          <div class="inputGroup">
-            <input type="text" placeholder=" " />
-            <label>Location</label>
-          </div>
-          <p>Where are you going?</p>
-        </div>
-      </div>
-      <div class="formGroup">
-        <span><i class="ri-user-3-line"></i></span>
-        <div class="inputContent">
-          <div class="inputGroup">
-            <input type="number" placeholder=" " />
-            <label>Travelers</label>
-          </div>
-          <p>Add guests</p>
-        </div>
-      </div>
-      <div class="formGroup">
-        <span><i class="ri-calendar-line"></i></span>
-        <div class="inputContent">
-          <div class="inputGroup">
-            <input type="date" placeholder=" " />
-            <label>Departure</label>
-          </div>
-          <p>Add date</p>
-        </div>
-      </div>
-      <div class="formGroup">
-        <span><i class="ri-calendar-line"></i></span>
-        <div class="inputContent">
-          <div class="inputGroup">
-            <input type="date" placeholder=" " />
-            <label>Return</label>
-          </div>
-          <p>Add date</p>
-        </div>
-      </div>
-      <button class="btn"><i class="ri-search-line"></i></button>
-    </form>
-  </section>
-  <!--BookingForm END-->
 
 
 
@@ -215,9 +128,5 @@
     </div>
   </footer>
   <!--Footer END-->
-
-
-
-
 </body>
 </html>

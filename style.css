@@ -12,6 +12,8 @@
   --maxwidth: 1200px
 }
 
+scale
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -89,10 +91,11 @@ select#language:focus {
   font-weight:700;
   padding-left:1lh;
   padding-right:1lh;
+  margin-left: auto;
 }
 
 .bg-solid {
-  background-color: rgb(255, 255, 255) !important; /* Change this to your desired solid color */
+  background-color: rgb(255, 255, 255) !important;
 }
 
 .navbar-brand {
@@ -103,6 +106,11 @@ select#language:focus {
   color: #ffffff; /* White color */
 }
 
+.login {
+  border-radius: 10px;
+  background-color: #e4d500;
+  border-width: 1px;
+}
 
 
 
@@ -395,6 +403,9 @@ img {
     }
   }
   
+
+
+
 @media (width < 900px) {
   nav .btn {
     display: none;
@@ -432,6 +443,8 @@ img {
     gap: 2rem;
   }
 }
+
+
 
 
 @media (width < 600px) {
