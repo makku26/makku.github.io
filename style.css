@@ -373,6 +373,14 @@ img {
   color: var(--text-blue);
 }
 
+.footerCol img {
+  width: 50%;
+  margin-right: auto;
+  margin-bottom: auto;
+  padding-bottom: 5px;
+  padding-top: -50px;
+}
+
 .socials {
   display: flex;
   align-items: center;
@@ -506,7 +514,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(255, 255, 255, 0.8);
   z-index: 9999; 
 }
 

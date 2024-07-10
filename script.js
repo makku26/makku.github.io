@@ -5,7 +5,7 @@ window.addEventListener("load", () => {
   // Simulate a delay of 3 seconds before hiding the loader
   setTimeout(() => {
     loader.classList.add("loader--hidden");
-  }, 800); // Adjust the time in milliseconds (3000 ms = 3 seconds)
+  }, 300); // Adjust the time in milliseconds (3000 ms = 3 seconds)
 
   loader.addEventListener("transitionend", () => {
     document.body.removeChild(loader);
