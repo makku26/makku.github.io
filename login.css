@@ -77,8 +77,9 @@ select#language {
 .navbar-nav > li{
   color: #334c99 !important;
   font-weight:700;
-  padding-left:1lh;
-  padding-right:1lh;
+  padding-left:1vw;
+  padding-right:3vw;
+  margin-left: auto;
 }
 
 .bg-transparent {

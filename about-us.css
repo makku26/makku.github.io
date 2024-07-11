@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --primary-color: #fddb00;
+  --primary-color-dark: #006dc5;
+  --text-blue: #006dc5;
+  --text-yellow: #fddb00;
+  --text-dark: #0f172a;
+  --text-light: #64748b;
+  --extra-light: #f1f5f9;
+  --white: #ffffff;
+  --maxwidth: 1200px
+}
+
+.header__container {
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+  
+.header__image__container__about-us {
+  position: relative;
+  min-height: 2px;
+  background-image: linear-gradient(
+      to right,
+      rgba(50, 82, 158, 0.9),
+      rgba(100, 125, 187, 0.1)
+    ),
+    url("assets/header-about-us.avif");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50% / 0% 0% 10% 10%;
+}
+
+.header__content {
+  max-width: 800px;
+  padding: 5rem 12rem;
+}
+  
+.header__content h1 {
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  line-height: 4rem;
+  font-weight: 600;
+  color: var(--white);
+}
+  
+.header__content p {
+  color: var(--extra-light);
+}
+
+
+
+
+
+@media (width < 1200px) {
+  .header__content {
+    max-width: 600px;
+    padding: 5rem 5rem;
+  }
+}
+  
+@media (width < 900px) {
+    .header__content {
+        max-width: 600px;
+        padding: 5rem 3rem;
+      }
+}
+
+@media (width < 600px) {
+    .header__content {
+        max-width: 600px;
+        padding: 5rem 2rem;
+      }
+}

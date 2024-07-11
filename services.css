@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --primary-color: #fddb00;
+  --primary-color-dark: #006dc5;
+  --text-blue: #006dc5;
+  --text-yellow: #fddb00;
+  --text-dark: #0f172a;
+  --text-light: #64748b;
+  --extra-light: #f1f5f9;
+  --white: #ffffff;
+  --maxwidth: 1200px
+}
+
+.vp-image img {
+  width: 100vw;
+}
+
+.header__image__container__services {
+  position: relative;
+  min-height: 2px;
+  background-image:
+    url("assets/header-services.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50% / 0% 0% 10% 10%;
+}
+
+
+.memories {
+  background-color: var(--extra-light);
+}
+
+.memoriesHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.memoriesHeader .sectionHeader {
+  max-width: 600px;
+}
+
+.memoriesHeader .viewAll {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  background: transparent;
+  white-space: nowrap;
+  outline: none;
+  border: 1px solid var(--text-light);
+  border-radius: 2rem;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.memoriesGrid {
+  margin-top: 0rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+}
+
+.memoriesCard {
+  padding: 3rem 2rem;
+  text-align: center;
+  border-radius: 5rem;
+  background-color: var(--white);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.05);
+}
+
+.memoriesCard span {
+  display: inline-block;
+  padding: 20px 32px;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  color: var(--white);
+  background-color: var(--primary-color-dark);
+  border-radius: 100%;
+}
+
+.memoriesCard:nth-child(2) span {
+  background-color: var(--primary-color-dark);
+}
+
+.memoriesCard:nth-child(3) span {
+  background-color: var(--primary-color-dark);
+}
+
+.memoriesCard h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.memoriesCard p {
+  color: var(--text-light);
+  line-height: 1.75rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (width < 1200px) {
+    .sectionContainer.headerContainer,
+    .sectionContainer.planContainer,
+    .sectionContainer.loungeContainer {
+      overflow: hidden;
+    }
+  
+    .memoriesGrid {
+      gap: 3rem;
+    }
+  }
+  
+
+
+
+@media (width < 900px) {
+  .memoriesGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+
+
+
+@media (width < 600px) {
+  .memoriesHeader {
+    flex-direction: column;
+  }
+
+  .memoriesGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
