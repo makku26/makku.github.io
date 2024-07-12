@@ -103,7 +103,7 @@
           Experience the Ultimate in Convenience and Comfort with Cebu Pacific,
            Offering Tailored Travel Solutions to Meet All Your Journey Needs.
         </p>
-        <button type="button" class="btn btn-outline-light" >Read our services</button>
+        <button type="button" class="btn btn-outline-light" id="readServicesButton">Read our services</button>
       </div>
       <div class="booking__container">
       </div>
@@ -150,7 +150,8 @@
 
 
   <br><br><br>
-  <section class="memories" style="background: aliceblue;">
+  <section class="memories" id="memories" style="background: aliceblue;">
+    <br><br>
     <div class="sectionContainer memoriesContainer">
       <div class="memoriesHeader">
         <h2 class="sectionHeader">
@@ -268,5 +269,10 @@
 
 
   <script src="script.js"></script>
+  <script>
+    document.getElementById('readServicesButton').addEventListener('click', function() {
+      window.location.href = '#memories';
+    });
+  </script>
 </body>
 </html>

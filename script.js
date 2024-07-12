@@ -29,21 +29,6 @@ sign_in_btn.addEventListener("click", () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //For the actual Login Page
 
 // Default credentials
