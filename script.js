@@ -31,30 +31,9 @@ sign_in_btn.addEventListener("click", () => {
 
 //For the actual Login Page
 
-// Default credentials
 let defaultUsername = 'admin';
 let defaultPassword = '1234';
 
-// Function to check if the user is logged in (simulated logic)
-function isLoggedIn() {
-    // Replace this with your actual logic to check if the user is logged in
-    return localStorage.getItem('isLoggedIn') === 'true';
-}
-
-// Function to update login/logout button text and behavior
-function updateLoginLogoutButton() {
-    const loginLogoutButton = document.getElementById('loginLogoutButton');
-    const loginLink = '<a class="nav-link" href="./login.html" style="color: #006dc5;"><i class="ri-user-fill"></i>Login</a>';
-    const logoutLink = '<a class="nav-link" href="#" style="color: #006dc5;" onclick="logout()"><i class="ri-user-fill"></i>Logout</a>';
-
-    if (isLoggedIn()) {
-        loginLogoutButton.innerHTML = logoutLink;
-    } else {
-        loginLogoutButton.innerHTML = loginLink;
-    }
-}
-
-// Function for login action
 document.querySelector('.sign-in-form').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent the form from submitting the traditional way
 
@@ -76,8 +55,6 @@ document.querySelector('.sign-in-form').addEventListener('submit', function(even
     const storedPassword = localStorage.getItem('password') || defaultPassword;
 
     if (username === storedUsername && password === storedPassword) {
-        // Set isLoggedIn to true in localStorage
-        localStorage.setItem('isLoggedIn', 'true');
         // Redirect to the home page
         window.location.href = 'index.html';
     } else {
@@ -86,27 +63,41 @@ document.querySelector('.sign-in-form').addEventListener('submit', function(even
         message.style.color = 'red';
         document.querySelector('.sign-in-form').appendChild(message);
     }
-
-    // Update login/logout button in navbar
-    updateLoginLogoutButton();
 });
 
-// Function for logout action
-function logout() {
-    // Clear isLoggedIn in localStorage
-    localStorage.removeItem('isLoggedIn');
-    // Update login/logout button in navbar
-    updateLoginLogoutButton();
-}
+document.querySelector('.sign-up-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting the traditional way
 
-// Call updateLoginLogoutButton when the page loads
-window.addEventListener('load', function() {
-    updateLoginLogoutButton();
+    const username = document.querySelector('.sign-up-form input[type="text"]').value;
+    const email = document.querySelector('.sign-up-form input[type="email"]').value;
+    const password = document.querySelector('.sign-up-form input[type="password"]').value;
+    let message = document.querySelector('.sign-up-form .message');
+
+    // If there's already a message element, remove it
+    if (message) {
+        message.remove();
+    }
+
+    // Create a new message element
+    message = document.createElement('div');
+    message.classList.add('message');
+
+    // Store user-entered credentials in localStorage
+    localStorage.setItem('username', username);
+    localStorage.setItem('password', password);
+
+    // Update default credentials if user has changed them during signup
+    defaultUsername = username;
+    defaultPassword = password;
+
+    // Example logic to handle sign-up (You would typically send this data to your server)
+    if (username && email && password) {
+        message.textContent = 'Sign-up successful!';
+        message.style.color = 'green';
+        document.querySelector('.sign-up-form').appendChild(message);
+    } else {
+        message.textContent = 'Please fill in all fields';
+        message.style.color = 'red';
+        document.querySelector('.sign-up-form').appendChild(message);
+    }
 });
-
-
-
-
-
-
-
